@@ -1,0 +1,14 @@
+<h1>All our Flats (<%= @flats.length %>)</h1>
+
+  <div class = "d-flex flex-row justify-content-center">
+  <% @flats.each do |flat| %>
+    <div class="p-4 border m-3 rounded shadow-sm">
+      <img src="https://data.pixiz.com/output/user/frame/preview/400x400/6/6/8/0/3400866_39995.jpg" alt="flat" width=200px>
+      <h3><%= flat.name %></h3>
+      <p><%= flat.address %></p>
+      <p><%= flat.number_of_guests %></p>
+      <p><%= flat.price_per_night %></p>
+    </div>
+  <% end %>
+  </div>
+</div>
